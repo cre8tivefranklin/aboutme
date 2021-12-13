@@ -1,0 +1,250 @@
+  
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cre8tiveFranklin</title>
+  </head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/footer-menu.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="stylesheets/UI-UX.css" media="screen"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <style>
+    
+    .emptyspace{
+      height: 100px;
+}
+
+    .author{
+        height: 600px;
+        z-index: 0;
+        font-family: 'Monoton';
+        margin-left: 200px;
+    }
+    .author-image{
+        height: inherit;
+        background-image: url('https://scontent-lga3-2.xx.fbcdn.net/v/t1.0-9/141730970_10219586189104562_2464009146447692129_n.jpg?_nc_cat=104&ccb=2&_nc_sid=8bfeb9&_nc_ohc=MQ0vy5ylKmYAX9ghHLq&_nc_ht=scontent-lga3-2.xx&oh=5039aa124a538332afc5208aa05a87c2&oe=6041D584');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .title{
+      color: #fd0101;
+      margin: 20px;
+      background-image: linear-gradient(to right, rgba(100,0,0,.75), rgba(100,0,0,.50) );
+    }
+    .about-author{
+      height: 600px;
+      background-image: linear-gradient(to right, rgba(100,0,0,.75), rgba(100,0,0,.50) );
+      color: #fd0101;
+      padding: 20px;
+      text-align: left;
+    }
+    .author{
+    font-family: 'Monoton';
+    background-image: linear-gradient(to right, rgba(100,0,0,.75), rgba(100,0,0,.50) );
+    color: #fd0101;
+    font-size: 20px;
+    overflow: auto;
+}
+    .author:hover{
+      color: #ffb4b4;
+    }
+
+    .cover{
+      width: 100%;
+      height: 100%;
+      margin-left: 0px;
+
+    }
+
+	.nav{
+		z-index: 1;
+		}
+	.carousel-position{
+		z-index: 0;
+	}
+	.carousel-inner{
+		height: 100%;
+	}
+	a{
+		color: inherit;
+	}
+
+  
+  #c{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(100,0,0,.50);
+  }
+  .cap{
+    color: rgb(100,100,100);
+    font-size: 25px;
+    font-family: sans-serif;
+    background-color: rgba(0,0,0,.65);
+    text-align: center;
+  }
+
+  *{
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {background: rgba(100,0,0,.50);}
+            canvas {display:block;}
+
+
+    @media screen and (max-width: 680px) {
+    body {
+    }
+
+        .about-author{
+        height: 600px;
+        background-image: linear-gradient(to right, rgba(0,0,0,.70), rgba(0,0,0,.65));
+        color: #fd0101;
+        padding: 20px;
+        text-align: left;
+      }
+    }
+  }
+
+  </style>
+
+  <body>
+    <canvas id="c"></canvas>
+
+
+      <div class='nav'>
+        <!-- inline display --- just the menu and contact-->
+
+
+        <div class='nav-drop'>
+          <a href='index.html'><h1 class='menu'>Menu</h1></a>
+          <!-- fixed postion -->
+          <!-- nav -->
+        <!-- menu tag -->
+        <!-- dropdown items _ they display when hovering over the menu tag
+            blog
+            art
+        -->   
+          <div class='nav-drop-content'>     
+            <a href="web.html"><p>About</p></a>
+            <a href="goals.html"><p>Goals</p></a>
+            <a href="Courses.html"><p>Courses</p></a>
+            <!--<a href="https://docs.google.com/document/d/10tH8jdo3QMj8jKuU1v-wpiPmxziowosWpYQPksi8GJA/edit?usp=sharing"><p>Resume</p></a>-->
+          </div>
+        </div>
+
+        
+
+        
+        <a href='contact.html'><p class='contact'>Contact</p></a>
+        <!-- contact -->
+      </div>
+	  
+	  
+
+      <div class='emptyspace'></div>
+
+     <div class='author'>	 
+       <h1 class='title'>Projects</h1>
+       <ul>
+         <li>This Page <span style="font-size: 50px;"> :)</span></li>
+         <ul>
+           <h2>Cyber Stalker Manuscript.</h2>
+          <li>
+            <img class="cover" src="cover.png" alt='Cover-image'>
+            <figcaption class='cap'>Cover Art Concept.</figcaption>
+            <a href="the-net-diver.pdf"><p>Download here</p></a>
+            <p>
+              A novel that takes place in a dystopian future. It's.... a work in progress. I wrote 500 pages of abysmal grammar. You'll see that the cover and title differ from the one presented above. 
+            </p>
+          </li>
+         </ul>
+       </ul>	
+      </div>
+
+      <!--div class='about-author col'>
+        <div class='about-novel col-md-4'>
+          <h2>Projects</h2>
+          <p>
+            
+          </p>
+        </div>
+      </div-->
+
+
+      <div class='footer'>
+          <!-- fixed position -->
+          <!-- footer 
+            social
+            contact info
+        -->
+        <div class='fa facebook'></div>
+        <div class='ig instagram'></div>
+      </div>
+
+
+  </body>
+
+  <script>
+
+    // geting canvas by Boujjou Achraf
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+
+        //making the canvas full screen
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+
+        //chinese characters - taken from the unicode charset
+        var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        //converting the string into an array of single characters
+        matrix = matrix.split("");
+
+        var font_size = 10;
+        var columns = c.width/font_size; //number of columns for the rain
+        //an array of drops - one per column
+        var drops = [];
+        //x below is the x coordinate
+        //1 = y co-ordinate of the drop(same for every drop initially)
+        for(var x = 0; x < columns; x++)
+            drops[x] = 1; 
+
+        //drawing the characters
+        function draw()
+        {
+            //Black BG for the canvas
+            //translucent BG to show trail
+            ctx.fillStyle = "rgba(0, 0, 0, .04)";
+            ctx.fillRect(0, 0, c.width, c.height);
+
+            ctx.fillStyle = "#f4427d";//green text
+            ctx.font = font_size + "px arial";
+            //looping over drops
+            for(var i = 0; i < drops.length; i++)
+            {
+                //a random chinese character to print
+                var text = matrix[Math.floor(Math.random()*matrix.length)];
+                //x = i*font_size, y = value of drops[i]*font_size
+                ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+                //sending the drop back to the top randomly after it has crossed the screen
+                //adding a randomness to the reset to make the drops scattered on the Y axis
+                if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                    drops[i] = 0;
+
+                //incrementing Y coordinate
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 35);
+
+
+  </script>
